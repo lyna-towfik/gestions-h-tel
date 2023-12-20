@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+      
+        
+}
+nav{
+    background:black;
+    color: white;
+    overflow: auto;
+}
+nav a{
+    color:white;
+}
+nav h1{
+float :left;
+padding: 5px;
+}
+nav ul{
+    list-style: none;
+    float: right;
+}
+nav ul li{
+    float: left;
+
+}
+nav ul li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color:orange;
+}
+.container{
+    max-width: 600px;
+    margin: 50px auto;
+    background-color:none;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, blu0e, 0.1);
+    
+}
+h2{
+    text-align: center;
+    color: #333;
+}
+table{
+    width: 100%;
+    margin-bottom: 20px;
+    backdrop-filter: blur(40px);
+}
+input,select{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+label{
+    margin-top: 10px;
+    font-weight: bold;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    
+}
+input[type="submit"]{
+    background-color: #3498db;
+    color:none;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+background-color: #2980b9;
+}
+</style>
+<body>
+<nav>
+        
+   
+   
+    <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="index.html" class="nav-link">Acceuil</a></li>
+            
+        </ul>
+      </div>
+      
+  </nav>
+    
+
+    <div class="container">
+        <h2>PAIEMENT</h2>
+       
+        
+            <form action="paiement.php" method="post">
+                <table border="1">
+                    <tr>
+                        <td> <label for="numero_telephone">numero_telephone:</label></td>
+                        <td> <input type="number" name="numero_telephone" id="numero_telephone" required></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="numero_dmoney">numero_dmoney:</label></td>
+                        <td> <input type="number" name="numero_dmoney" id="numero_dmoney" required></td>
+                    </tr>
+                    
+                   
+                </table>
+                <input type="submit" name="Valider" value="Valider">
+            </form>
+      
+ 
+            
+            
+       
+    </div>
+</body>
+
+</html>

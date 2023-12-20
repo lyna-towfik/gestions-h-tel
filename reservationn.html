@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  
+    
+}
+nav{
+background:black;
+color: white;
+overflow: auto;
+}
+nav a{
+color:white;
+}
+nav h1{
+float :left;
+padding: 5px;
+}
+nav ul{
+list-style: none;
+float: right;
+}
+nav ul li{
+float: left;
+
+}
+nav ul li a{
+display: block;
+padding: 20px;
+text-align: center;
+text-decoration: none;
+}
+nav ul li a:hover{
+color:orange;
+}
+.container{
+max-width: 600px;
+margin: 50px auto;
+background-color:none;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, blu0e, 0.1);
+
+}
+h2{
+text-align: center;
+color: #333;
+}
+table{
+width: 100%;
+margin-bottom: 20px;
+backdrop-filter: blur(40px);
+}
+input,select{
+width: 100%;
+padding: 8px;
+margin-bottom: 12px;
+box-sizing: border-box;
+}
+label{
+margin-top: 10px;
+font-weight: bold;
+}
+main{
+display: flex;
+flex-direction: column;
+
+}
+input[type="submit"]{
+background-color: #3498db;
+color:none;
+padding: 10px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+input[type="submit"]:hover{
+background-color: #2980b9;
+}
+</style>
+<body>
+  <nav>
+        
+    
+   
+    <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="index.html" class="nav-link">Acceuil</a></li>
+            <li class="nav-item"><a href="rooms.html" class="nav-link">Department Chambre</a></li>
+           
+        </ul>
+      </div>
+      
+  </nav>
+        <center>
+    
+    <div class="container">
+        <h2>reservation</h2>
+           
+            
+        <form method="POST" action="reservationn.php">
+            <table border="1">
+             
+             <tr>
+               <td><label for="date_dbreservation">date_dbreservation:</label></td>
+                <td><input type="date" name="date_dbreservation" id="date_dbreservation" required ></td>
+              </tr>
+             <tr>
+               <td><label for="date_fnreservation">date_fnreservation:</label></td>
+               <td> <input type="date" name="date_fnreservation" id="date_fnreservation" required></td>
+             </tr>
+               <tr>
+              <td><label for="nbres_personnes">nombres de personne:</label></td>
+              <td> <input type="number" name="nbres_personnes" id="nbres_personnes" required></td>
+             </tr>
+            
+
+           </table>
+          <input type="submit" name="reserver" value="reserver">
+      </form>
+          
+     <script>
+      const currentDate=new date().toISOString():split('T')[0];
+      document.documentElementById(date).value=currentDate;
+     </script>
+      <script>
+				function reserver(date_dbreservation){
+					localStorage.setItem('date_dbreservation',date_dbreservation);
+					window.location.href='paiment.php';
+				}
+        function reserver(date_fnreservation){
+					localStorage.setItem('date_fnreservation',date_fnreservation);
+					window.location.href='paiment.php';
+				}
+			</script>      
+                
+           
+    </div>
+    
+  </center>   
+    
+</body>
+</html>
